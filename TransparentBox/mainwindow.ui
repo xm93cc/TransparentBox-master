@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>383</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TransparentBox</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(163, 179, 245);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="TransparentBtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>13</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#TransparentBtn
+{
+background-color:rgb(255, 255, 255);
+border:2px solid #5F92B2;
+border-radius:5px;
+color:rgb(0, 0, 0)
+}
+QPushButton#TransparentBtn:hover
+{
+background-color:rgb(0,130,150);
+border:2px solid #5F92B2;
+border-radius:5px;
+color:white;
+}
+QPushButton#TransparentBtn:hover:pressed
+{
+background-color:rgb(85,170,255); 
+border:2px solid #3C80B1;
+border-radius:5px;
+color:white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Transparent</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid #FFFFFF;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>TransparentBox By：xm93cc</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>6</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#exit
+{
+border-image: url(:/res/timg.png);
+border:1px solid #5F92B2;
+border-radius:5px;
+color:white
+}
+QPushButton#exit:hover
+{
+border-image: url(:/res/red.png);
+color: rgb(170, 0, 0);
+border:1px solid #5F92B2;
+border-radius:5px;
+color:white;
+}
+QPushButton#exit:hover:pressed
+{
+border-image: url(:/res/timg.png);
+border:1px solid #3C80B1;
+border-radius:5px;
+color:white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="EdPid">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>13</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid #FFFFFF;
+color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PID">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>41</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);background-color: rgba(0,0,0,0.0);</string>
+    </property>
+    <property name="text">
+     <string>PID</string>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="EdLevel">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>60</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>13</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid #FFFFFF;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Level">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>50</y>
+      <width>51</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);background-color: rgba(0,0,0,0.0);</string>
+    </property>
+    <property name="text">
+     <string>Level</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="EdProcessName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>13</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid #FFFFFF;
+color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ProcessName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>111</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>ProcessName</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>180</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>PID Level greater than  ProcessName </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="min">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>6</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton#min
+{
+border-image: url(:/res/touch-none.png);
+border:1px solid #5F92B2;
+border-radius:5px;
+color:white
+}
+QPushButton#min:hover
+{
+border-image: url(:/res/touch-pass.png);
+color: rgb(170, 0, 0);
+border:1px solid #5F92B2;
+border-radius:5px;
+color:white;
+}
+QPushButton#min:hover:pressed
+{
+border-image:url(:/res/touch-pass.png);
+border:1px solid #3C80B1;
+border-radius:5px;
+color:white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>22</width>
+      <height>22</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="target">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>210</y>
+      <width>130</width>
+      <height>125</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#target
+{
+border-image: url(:/res/target.png);
+border:1px solid #5F92B2;
+border-radius:5px;
+color:white
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>22</width>
+      <height>22</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>TransparentBtn</zorder>
+   <zorder>title</zorder>
+   <zorder>EdPid</zorder>
+   <zorder>PID</zorder>
+   <zorder>Level</zorder>
+   <zorder>EdLevel</zorder>
+   <zorder>exit</zorder>
+   <zorder>ProcessName</zorder>
+   <zorder>EdProcessName</zorder>
+   <zorder>label</zorder>
+   <zorder>min</zorder>
+   <zorder>target</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
