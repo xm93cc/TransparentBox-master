@@ -36,8 +36,6 @@ MainWindow::MainWindow(QWidget *parent) :
     edLevel->setValidator( validatoredLevel );
     edLevel->setPlaceholderText("1~255");
 
-    this->task=new Task();
-    this->task->start();
     this->setWindowFlags(Qt::ToolTip);
     createSystemTray();
 
@@ -71,7 +69,7 @@ BOOL CALLBACK EnumCallback(HWND hwnd, LPARAM /*lParam*/,int t)
     DWORD bAlpha = 0;
     GetLayeredWindowAttributes(hwnd, 0L, (BYTE*)&bAlpha, NULL);   // 获得当前窗口的透明度（255为不透明）
     SetWindowLong(hwnd, GWL_EXSTYLE, WS_EX_LAYERED);               // 给窗口增加透明属性
-    SetLayeredWindowAttributes(hwnd, 0L, (BYTE)t, LWA_ALPHA);    // 设置窗口的透明度为100
+    SetLayeredWindowAttributes(hwnd, 0L, (BYTE)t, LWA_ALPHA);
     //DwmEnableBlurBehindWindow(getwin, &pd);
     //EnumChildWindows(hwnd, EnumCallback, lParam);                // 遍历窗口的子窗口
 
@@ -230,16 +228,6 @@ void MainWindow::on_exit_clicked()
     exit(1);
 }
 
-void MainWindow::initModel()
-{
-    processList = new QStandardItemModel();
-
-}
-
-void MainWindow::sendListener()
-{
-
-}
 
 void MainWindow::on_TransparentBtn_clicked()
 {

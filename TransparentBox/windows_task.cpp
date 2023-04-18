@@ -53,8 +53,8 @@ LRESULT CALLBACK LowLevelMouseProc(int nCode, WPARAM wParam, LPARAM lParam)
      {
      case WM_LBUTTONUP:     // 鼠标左键抬起
         emit WindowsTask::getInstance()->modify_mouse();
-        WindowsTask::getInstance()->is_stop = true;
-        qDebug() << "left btn up" << "\n";
+        if (!WindowsTask::getInstance()->is_stop)
+            WindowsTask::getInstance()->is_stop = true;
         break;
      default:
         break;

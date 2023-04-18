@@ -1,25 +1,24 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "windows_task.h"
-#include<windows.h>
-#include<dwmapi.h>
+#include <windows.h>
+#include <dwmapi.h>
 #include <QMainWindow>
-#include<stdlib.h>
+#include <stdlib.h>
 #include <QMouseEvent>
 #include <QWidget>
 #include <windowsx.h>
-#include<QStandardItemModel>
-#include<QFileDialog>
+#include <QStandardItemModel>
+#include <QFileDialog>
 #include <shellapi.h>
-#include<QMessageBox>
+#include <QMessageBox>
 #include <QStringListModel>
 #include <QStandardItemModel>
 #include <QModelIndex>
 #include <stdio.h>
 #include <windows.h>
 #include <tlhelp32.h>
-#include "task.h"
-#include<QMenu>
+#include <QMenu>
 #include <QSystemTrayIcon>
 #include "catchwindow.h"
 
@@ -55,8 +54,6 @@ private slots:
 
     void on_min_clicked();
 
-    void sendListener();
-
     void onActivated(QSystemTrayIcon::ActivationReason action);
 
     void createSystemTray();
@@ -73,7 +70,6 @@ private:
     QStringListModel *Model;
     QStandardItemModel *ItemModel;
     QStringList strListl;
-    Task *task;
     QMenu* m_pTrayMennu;            //系统托盘右键菜单项
     QSystemTrayIcon* m_pSystemTray; //系统托盘图标
     //右键菜单栏选项
@@ -82,12 +78,6 @@ private:
     bool m_isShowSystemTray=false;
     WindowsTask* m_catch_window_task;
     CatchWindow* m_draw_catch_window;
-
-private:
-    void initModel();
-    //void initData();
-
-
 };
 
 #endif // MAINWINDOW_H

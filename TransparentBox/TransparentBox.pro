@@ -28,7 +28,6 @@ SOURCES += \
     catchwindow.cpp \
         main.cpp \
         mainwindow.cpp \
-    task.cpp \
     windows_task.cpp
 
 HEADERS += \
@@ -36,7 +35,6 @@ HEADERS += \
     lock_free_queue.h \
         mainwindow.h \
     rect_info.h \
-    task.h \
     windows_task.h
 
 FORMS += \
